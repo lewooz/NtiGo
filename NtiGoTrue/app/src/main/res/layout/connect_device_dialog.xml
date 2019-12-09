@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@color/siyah">
+
+    <TextView
+        android:id="@+id/bilgi_kontrol_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please wait while connecting to the device..."
+        android:textColor="@color/beyaz"
+        android:gravity="center"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:layout_marginTop="50dp"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bilgi_kontrol_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

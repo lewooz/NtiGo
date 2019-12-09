@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1007579642836",
+    "firebase_url": "https://cts-bilisim.firebaseio.com",
+    "project_id": "cts-bilisim",
+    "storage_bucket": "cts-bilisim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007579642836:android:48cc86932b2bb2b55ff441",
+        "android_client_info": {
+          "package_name": "com.levent.ntigo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007579642836-3ebflbno32p0d5s405jspttafltj2i7e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levent.ntigo",
+            "certificate_hash": "faba4ce6aecc23a96d08749e38d781d80d88cff1"
+          }
+        },
+        {
+          "client_id": "1007579642836-mrma98vi786smbsk4s3bglal4rbiakj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVfI5bRivLY6jyHg1yu4CYyRakxdbrpA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007579642836-mrma98vi786smbsk4s3bglal4rbiakj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

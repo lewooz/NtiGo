@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InteriorSensorInfoActivity"
+    android:background="@drawable/mainbackground"
+    android:padding="4dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/harici_sensor_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="EXTERIOR CENSORS"
+        app:titleTextColor="@color/siyah"
+        android:background="@drawable/harici_duz_animation_list"
+        app:titleTextAppearance="@style/ToolbarType"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/harici_sensor_toolbar"
+        android:id="@+id/harici_sensor_recyclerview"
+        android:layout_marginTop="10dp"
+
+        />
+
+</RelativeLayout>

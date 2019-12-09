@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gri">
+            <ImageView
+                android:id="@+id/device_picture_card"
+                android:layout_width="130dp"
+                android:layout_height="130dp"/>
+            <TextView
+                android:id="@+id/cihaz_name_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/device_picture_card"
+                android:textColor="@color/siyah"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="CİHAZ ADI"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/model_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/siyah"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="NTI 2-D"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentEnd="true"
+
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/connect_button_card"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/model_card"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/butonstil"
+                />
+
+            <TextView
+                android:id="@+id/ipno_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/device_picture_card"
+                android:textColor="@color/siyah"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="192.222.222.222"
+                android:textSize="20dp"
+                android:layout_below="@id/cihaz_name_card"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/username_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/device_picture_card"
+                android:textColor="@color/siyah"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="username"
+                android:textSize="15dp"
+                android:layout_below="@id/ipno_card"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/password_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/device_picture_card"
+                android:textColor="@color/siyah"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="password"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_below="@id/username_card"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

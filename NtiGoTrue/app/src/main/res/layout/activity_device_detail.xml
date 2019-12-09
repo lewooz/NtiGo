@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeviceDetailActivity"
+    android:background="@color/beyaz">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:id="@+id/üst_relative"
+        android:background="@drawable/infobanner_animation_list">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cihaz_adı"
+        android:layout_marginTop="10dp"
+        android:text="Device Name:"
+        android:textSize="18dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/siyah"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cihaz_model"
+        android:layout_below="@id/cihaz_adı"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:text="Model: "
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/siyah"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/cihaz_uptime"
+        android:layout_below="@id/cihaz_model"
+        android:textSize="18dp"
+        android:text="Device Uptime: "
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/siyah"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Firmware: "
+        android:textSize="18dp"
+        android:layout_below="@id/cihaz_uptime"
+        android:layout_marginTop="5dp"
+        android:id="@+id/cihaz_firmware"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/siyah"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/üst_relative"
+        android:id="@+id/alt_layout"
+        android:orientation="vertical"
+        android:background="@drawable/mainbackground">
+
+        <Button
+            android:id="@+id/harici_sensor_image"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/harici_animation_list"
+            android:text="EXTERIOR CENSORS"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textSize="17dp"
+            android:onClick="haricisensor"
+            />
+        <Button
+            android:id="@+id/ic_sensör_image"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/harici_sensor_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/dahili_animation_list"
+            android:onClick="interiorsensor"
+            android:text="INTERIOR CENSORS"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textSize="17dp"
+            />
+        <Button
+            android:id="@+id/kuru_kontak_image"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/harici_sensor_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/kuru_kontak_animation__list"
+            android:text="DIGITAL INPUT CENSORS"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textSize="17dp"
+            android:onClick="digisensor"
+            />
+        <Button
+            android:id="@+id/ip_devices_image"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/kuru_kontak_image"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ip_animation_list"
+            android:text="IP DEVICES"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textSize="17dp"
+            android:onClick="ipdevices"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

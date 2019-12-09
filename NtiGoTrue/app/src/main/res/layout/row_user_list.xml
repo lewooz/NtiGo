@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/card_firma_adı"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Firma Adı"
+            android:textColor="@color/siyah"
+            android:textSize="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+        android:id="@+id/card_kullanıcı_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="mail@mail.com"
+        android:layout_below="@id/card_firma_adı"
+        android:textColor="@color/siyah"
+        android:textSize="17dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        />
+        <TextView
+            android:id="@+id/card_kullanıcı_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="123456"
+            android:layout_below="@id/card_firma_adı"
+            android:textColor="@color/siyah"
+            android:textSize="17dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/card_kullanıcı_maxdevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Maksimum Ünite: 5"
+            android:layout_below="@id/card_kullanıcı_mail"
+            android:textColor="@color/siyah"
+            android:textSize="15dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/card_kullanıcı_usedDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Kullanılan Ünite: 2"
+            android:layout_below="@id/card_kullanıcı_password"
+            android:textColor="@color/siyah"
+            android:textSize="15dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

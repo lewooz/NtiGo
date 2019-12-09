@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="150dp"
+    android:elevation="10dp"
+    android:background="@color/ok"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:id="@+id/digital_sensor_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ok">
+
+        <TextView
+            android:id="@+id/digital_sensor_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Censor Name: Internal Temperature"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="@color/siyah"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/digital_sensor_alarm_durumu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Censor Alarm Status: 1"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="@color/siyah"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/digital_sensor_desc"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/digital_sensor_deger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="102.38 F"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="@color/siyah"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/digital_sensor_alarm_durumu"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

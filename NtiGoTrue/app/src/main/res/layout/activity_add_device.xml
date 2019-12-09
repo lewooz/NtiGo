@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDeviceActivity"
+    android:background="@drawable/mainbackground">
+
+
+    <ImageView
+        android:id="@+id/ntiadd_image"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/adddeviceimage"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/açıklama_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill in the blanks with the necessary information about the NTI-ENVIROMUX device you are using."
+        android:textColor="@color/siyah"
+        android:layout_below="@id/ntiadd_image"
+        android:fontFamily="@font/open_sans_bold"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/açıklama_text"
+        android:id="@+id/edit_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        app:boxBackgroundColor="@color/beyaz"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeWidth="5dp"
+        app:boxCollapsedPaddingTop="5dp"
+
+        app:boxStrokeColor="@color/siyah"
+        android:theme="@style/TextLabel"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ip_number_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="IP"
+
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_layout"
+        android:id="@+id/edit4_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        app:boxBackgroundColor="@color/beyaz"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeWidth="5dp"
+        app:boxCollapsedPaddingTop="5dp"
+
+        app:boxStrokeColor="@color/siyah"
+        android:theme="@style/TextLabel"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/device_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Device Name"
+            android:textStyle="bold"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit4_layout"
+        android:id="@+id/edit2_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        app:boxBackgroundColor="@color/beyaz"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeWidth="5dp"
+        app:boxCollapsedPaddingTop="5dp"
+
+        app:boxStrokeColor="@color/siyah"
+        android:theme="@style/TextLabel"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textStyle="bold"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit2_layout"
+        android:id="@+id/edit3_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        app:boxBackgroundColor="@color/beyaz"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeWidth="5dp"
+        app:boxCollapsedPaddingTop="5dp"
+
+        app:boxStrokeColor="@color/siyah"
+        android:theme="@style/TextLabel"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textStyle="bold"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD DEVICE"
+        android:textColor="@color/siyah"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_style"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:onClick="deviceadd"/>
+
+    <TextView
+        android:id="@+id/model_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit3_layout"
+        android:text="Model: "
+        android:textColor="@color/siyah"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        />
+
+     <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit3_layout"
+        android:layout_toRightOf="@id/model_text"
+         android:textColor="@color/siyah"
+         app:ms_text_color="@color/siyah"
+         android:fontFamily="@font/open_sans_semibold"
+         app:ms_dropdown_height="wrap_content"
+         />
+
+
+
+
+
+</RelativeLayout>

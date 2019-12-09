@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@drawable/mainbackground">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ctsbeyaz"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/ctslogo"
+
+        />
+    <ImageView
+        android:id="@+id/ntilogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ntitrue"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:id="@+id/mobil_uygulama_giriş_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ctslogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:gravity="center"
+        android:text="NTI ENVIROMUX\n2D/5D/16D\nMOBILE APPLICATION"
+        android:textColor="@color/beyaz"
+        android:textSize="35dp"
+
+
+        android:textStyle="bold" />
+
+</RelativeLayout>

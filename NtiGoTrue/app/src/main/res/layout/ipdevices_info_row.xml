@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="150dp"
+    android:elevation="10dp"
+    android:background="@color/ok"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:id="@+id/ipdevices_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ok">
+
+        <TextView
+            android:id="@+id/ipdevices_desc"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensör İsmi: Internal Temperature"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="@color/siyah"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/ipdevices_ip"/>
+
+        <TextView
+            android:id="@+id/ipdevices_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensör Alarm Durumu: 1"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="@color/siyah"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/ipdevices_deger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="102.38 F"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="@color/siyah"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/ipdevices_ip"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

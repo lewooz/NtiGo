@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="beyaz">#fff</color>
+    <color name="siyah">#000</color>
+    <color name="buton">#1A93B5</color>
+    <color name="gri">#979494</color>
+    <color name="dahilisensorbackground">#C99A18</color>
+    <color name="ok">#3F8842</color>
+    <color name="warning">#975F0B</color>
+    <color name="alarm">#FF1303</color>
+    <color name="ss">#432E69</color>
+
+</resources>
